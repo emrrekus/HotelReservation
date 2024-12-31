@@ -1,0 +1,135 @@
+.book-now-area .book-now-form input[type="date"].form-control {
+  background-color: transparent !important;
+  border: 2px solid rgba(255, 255, 255, 0.2) !important;
+  height: 52px !important;
+  color: #ffffff !important;
+  padding: 0 30px !important;
+  font-size: 14px !important;
+  border-radius: 0 !important;
+  width: 100% !important;
+  transition: all 0.3s !important;
+}
+
+.book-now-area .book-now-form input[type="text"].form-control {
+  background-color: transparent !important;
+  border: 2px solid rgba(255, 255, 255, 0.2) !important;
+  height: 52px !important;
+  color: #ffffff !important;
+  padding: 0 30px !important;
+  font-size: 14px !important;
+  border-radius: 0 !important;
+  width: 100% !important;
+  transition: all 0.3s !important;
+}
+
+/* Select elemanı için yeni stiller */
+.book-now-area .book-now-form select.form-control {
+  background-color: transparent !important;
+  border: 2px solid rgba(255, 255, 255, 0.2) !important;
+  height: 52px !important;
+  color: #ffffff !important;
+  padding: 0 30px !important;
+  font-size: 14px !important;
+  border-radius: 0 !important;
+  width: 100% !important;
+  transition: all 0.3s !important;
+  appearance: none !important;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='white' viewBox='0 0 16 16'%3E%3Cpath d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/%3E%3C/svg%3E") !important;
+  background-repeat: no-repeat !important;
+  background-position: calc(100% - 15px) center !important;
+  cursor: pointer !important;
+}
+
+.book-now-area .book-now-form select.form-control:focus {
+  border-color: #cb8670 !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* Select option elemanları için */
+.book-now-area .book-now-form select.form-control option {
+  background-color: #2a2a2a !important;
+  color: #ffffff !important;
+}
+
+.book-now-area .book-now-form input[type="text"].form-control:focus {
+  border-color: #cb8670 !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.book-now-area .book-now-form input[type="text"].form-control::placeholder {
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.book-now-area .book-now-form input[type="date"].form-control:focus {
+  border-color: #cb8670 !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.book-now-area
+  .book-now-form
+  input[type="date"].form-control::-webkit-calendar-picker-indicator {
+  filter: invert(1) !important;
+  cursor: pointer !important;
+  opacity: 0.8 !important;
+}
+
+.book-now-area
+  .book-now-form
+  input[type="date"].form-control::-webkit-calendar-picker-indicator:hover {
+  opacity: 1 !important;
+}
+
+.book-now-area .book-now-form label {
+  color: #ffffff !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  margin-bottom: 10px !important;
+  text-transform: uppercase !important;
+}
+
+/* Number spinner için stiller */
+.number-spinner {
+  display: flex !important;
+  align-items: center !important;
+  border: 2px solid rgba(255, 255, 255, 0.2) !important;
+  background-color: transparent !important;
+}
+
+.number-spinner input[type="number"] {
+  background: transparent !important;
+  border: none !important;
+  color: #ffffff !important;
+  height: 48px !important;
+  padding: 0 !important;
+  text-align: center !important;
+  width: 60px !important;
+  -moz-appearance: textfield !important;
+}
+
+.number-spinner input[type="number"]::-webkit-outer-spin-button,
+.number-spinner input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none !important;
+  margin: 0 !important;
+}
+
+.spinner-btn {
+  background: transparent !important;
+  border: none !important;
+  color: #ffffff !important;
+  cursor: pointer !important;
+  height: 48px !important;
+  width: 48px !important;
+  font-size: 18px !important;
+  transition: all 0.3s !important;
+}
+
+.spinner-btn:hover {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.spinner-btn:focus {
+  outline: none !important;
+}

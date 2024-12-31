@@ -2,23 +2,88 @@
     Layout = "_MainLayout";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome to Our Hotel</h1>
-    <p>Experience luxury and comfort at its finest.</p>
-</div>
-
 <!-- ##### Hero Area Start ##### -->
-<section class="hero-area">
+@await Component.InvokeAsync("_HeroSectionComponentPartial")
+<!-- ##### Hero Area End ##### -->
+
+<!-- ##### Book Now Area Start ##### -->
+<div class="book-now-area">
     <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <div class="hero-content text-center">
-                    <h2>A Luxurious Stay Awaits</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris sceleri sque, at rutrum nulla dictum.</p>
-                    <a href="#" class="btn palatin-btn mt-50">Book Now</a>
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-12">
+                <div class="book-now-form">
+                    <form asp-controller="Default" asp-action="HotelList" method="post">
+                        <!-- Form Group -->
+                        <div class="form-group">
+                            <label for="city">City</label>
+                            <input type="text" class="form-control" name="city" id="city" placeholder="Enter city name">
+                        </div>
+
+                        <!-- Form Group -->
+                        <div class="form-group">
+                            <label for="checkin">Check In</label>
+                            <input type="date" class="form-control" name="arrival_date" id="checkin">
+                        </div>
+
+                        <!-- Form Group -->
+                        <div class="form-group">
+                            <label for="checkout">Check Out</label>
+                            <input type="date" class="form-control" name="departure_date" id="checkout">
+                        </div>
+
+                        <!-- Form Group -->
+                        <div class="form-group">
+                            <label for="adults">Adults</label>
+                            <div class="number-spinner">
+                                <button type="button" class="spinner-btn minus">-</button>
+                                <input type="number" class="form-control" name="adults" id="adults" value="1" min="1" max="10">
+                                <button type="button" class="spinner-btn plus">+</button>
+                            </div>
+                        </div>
+
+                   
+
+                        <!-- Button -->
+                        <button type="submit" class="btn palatin-btn">Otel Ara</button>
+                    </form>
+
+
                 </div>
             </div>
         </div>
     </div>
-</section>
-<!-- ##### Hero Area End ##### -->
+</div>
+<!-- ##### Book Now Area End ##### -->
+
+<!-- ##### About Us Area Start ##### -->
+@await Component.InvokeAsync("_AboutUsComponentPartial")
+<!-- ##### About Us Area End ##### -->
+
+<!-- ##### Pool Area Start ##### -->
+@await Component.InvokeAsync("_PoolAreaComponentPartial")
+<!-- ##### Pool Area End ##### -->
+
+@section Scripts {
+    <script>
+        $(document).ready(function() {
+            // Plus button click event
+            $('.spinner-btn.plus').click(function() {
+                var input = $(this).siblings('input[type="number"]');
+                var currentValue = parseInt(input.val());
+                if (currentValue < parseInt(input.attr('max'))) {
+                    input.val(currentValue + 1);
+                }
+            });
+
+            // Minus button click event
+            $('.spinner-btn.minus').click(function() {
+                var input = $(this).siblings('input[type="number"]');
+                var currentValue = parseInt(input.val());
+                if (currentValue > parseInt(input.attr('min'))) {
+                    input.val(currentValue - 1);
+                }
+            });
+        });
+    </script>
+}
+

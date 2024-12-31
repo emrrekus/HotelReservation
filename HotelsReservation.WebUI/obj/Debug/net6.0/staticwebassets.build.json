@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "B+IStpsPguDH1ak2wZ27DRLhATQl/GjRZi+EyuXt3q4=",
+  "Hash": "G57z/GWbFqCjm5mKAtIRTrGKtGseil/W/y7gaCAvLsE=",
   "Source": "HotelsReservation.WebUI",
   "BasePath": "_content/HotelsReservation.WebUI",
   "Mode": "Default",
@@ -55,6 +55,25 @@
       "OriginalItemSpec": "C:\\Users\\pc\\Desktop\\MYProject\\HotelsReservation\\HotelsReservation.WebUI\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\HotelsReservation.WebUI.bundle.scp.css"
     },
     {
+      "Identity": "C:\\Users\\pc\\Desktop\\MYProject\\HotelsReservation\\HotelsReservation.WebUI\\wwwroot\\css\\custom.css",
+      "SourceId": "HotelsReservation.WebUI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\pc\\Desktop\\MYProject\\HotelsReservation\\HotelsReservation.WebUI\\wwwroot\\",
+      "BasePath": "_content/HotelsReservation.WebUI",
+      "RelativePath": "css/custom.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\custom.css"
+    },
+    {
       "Identity": "C:\\Users\\pc\\Desktop\\MYProject\\HotelsReservation\\HotelsReservation.WebUI\\wwwroot\\css\\site.css",
       "SourceId": "HotelsReservation.WebUI",
       "SourceType": "Discovered",
@@ -91,6 +110,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\pc\\Desktop\\MYProject\\HotelsReservation\\HotelsReservation.WebUI\\wwwroot\\js\\custom.js",
+      "SourceId": "HotelsReservation.WebUI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\pc\\Desktop\\MYProject\\HotelsReservation\\HotelsReservation.WebUI\\wwwroot\\",
+      "BasePath": "_content/HotelsReservation.WebUI",
+      "RelativePath": "js/custom.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\custom.js"
     },
     {
       "Identity": "C:\\Users\\pc\\Desktop\\MYProject\\HotelsReservation\\HotelsReservation.WebUI\\wwwroot\\js\\site.js",

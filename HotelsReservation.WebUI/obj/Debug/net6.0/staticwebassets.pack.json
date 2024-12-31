@@ -5,12 +5,20 @@
       "PackagePath": "staticwebassets\\HotelsReservation.WebUI.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\pc\\Desktop\\MYProject\\HotelsReservation\\HotelsReservation.WebUI\\wwwroot\\css\\custom.css",
+      "PackagePath": "staticwebassets\\css\\custom.css"
+    },
+    {
       "Id": "C:\\Users\\pc\\Desktop\\MYProject\\HotelsReservation\\HotelsReservation.WebUI\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
       "Id": "C:\\Users\\pc\\Desktop\\MYProject\\HotelsReservation\\HotelsReservation.WebUI\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\MYProject\\HotelsReservation\\HotelsReservation.WebUI\\wwwroot\\js\\custom.js",
+      "PackagePath": "staticwebassets\\js\\custom.js"
     },
     {
       "Id": "C:\\Users\\pc\\Desktop\\MYProject\\HotelsReservation\\HotelsReservation.WebUI\\wwwroot\\js\\site.js",

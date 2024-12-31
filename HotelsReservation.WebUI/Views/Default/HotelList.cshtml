@@ -1,0 +1,98 @@
+@model HotelsReservation.WebUI.Models.HotelsViewModel.Data
+
+@{
+    Layout = "_MainLayout";
+}
+
+<!-- ##### Breadcumb Area Start ##### -->
+<section class="breadcumb-area bg-img d-flex align-items-center justify-content-center" style="background-image: url(/palatin-gh-pages/img/bg-img/bg-6.jpg);">
+    <div class="bradcumbContent">
+        <h2>Oteller</h2>
+    </div>
+</section>
+<!-- ##### Breadcumb Area End ##### -->
+
+<!-- ##### Book Now Area Start ##### -->
+<div class="book-now-area">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-12">
+                <div class="book-now-form">
+                    <form asp-controller="Default" asp-action="HotelList" method="post">
+                        <!-- Form Group -->
+                        <div class="form-group">
+                            <label for="city">City</label>
+                            <input type="text" class="form-control" name="city" id="city" placeholder="Enter city name">
+                        </div>
+
+                        <!-- Form Group -->
+                        <div class="form-group">
+                            <label for="checkin">Check In</label>
+                            <input type="date" class="form-control" name="checkIn" id="checkin">
+                        </div>
+
+                        <!-- Form Group -->
+                        <div class="form-group">
+                            <label for="checkout">Check Out</label>
+                            <input type="date" class="form-control" name="checkOut" id="checkout">
+                        </div>
+
+                        <!-- Form Group -->
+                        <div class="form-group">
+                            <label for="adults">Adults</label>
+                            <div class="number-spinner">
+                                <button type="button" class="spinner-btn minus">-</button>
+                                <input type="number" class="form-control" name="adultCount" id="adults" value="1" min="1" max="10">
+                                <button type="button" class="spinner-btn plus">+</button>
+                            </div>
+                        </div>
+
+                        <!-- Button -->
+                        <button type="submit" class="btn palatin-btn">Otel Ara</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ##### Book Now Area End ##### -->
+
+<!-- ##### Rooms Area Start ##### -->
+<section class="rooms-area section-padding-0-100">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-6">
+                <div class="section-heading text-center">
+                    <div class="line-"></div>
+                    <h2>Otel Listesi</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris sceleri sque, at rutrum nulla dictum. Ut ac ligula sapien.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            @foreach (var item in Model.hotels)
+            {
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="single-rooms-area wow fadeInUp" data-wow-delay="100ms">
+                        <!-- Thumbnail -->
+                        <div class="bg-thumbnail bg-img" style="background-image: url(@item.property.photoUrls[0]);"></div>
+                        <!-- Price -->
+                        <p class="price-from">Fiyat: @item.property.priceBreakdown.grossPrice.value.ToString("F2") @item.property.priceBreakdown.grossPrice.currency  </p>
+                        <!-- Rooms Text -->
+                        <div class="rooms-text">
+                            <div class="line"></div>
+                            <h4>@item.property.name</h4>
+                            <p>@item.accessibilityLabel.Substring(0,100)...</p>
+                            <p>Otel Puanı: @item.property.reviewScore</p>
+                           
+                        </div>
+                        <!-- Book Room -->
+                        <a href="#" class="book-room-btn btn palatin-btn">Oteller Bak</a>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</section>
+<!-- ##### Rooms Area End ##### -->
