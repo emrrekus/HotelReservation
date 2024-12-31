@@ -43,6 +43,7 @@ Proje geliştirilirken aşağıdaki teknolojiler ve araçlar kullanılmıştır:
   Otel bilgilerini ve rezervasyon detaylarını almak için entegre edilmiştir.
 
 ---
+```bash
 ## Proje Yapısı
 HotelsReservation.WebUI/
 ├── Controllers/
