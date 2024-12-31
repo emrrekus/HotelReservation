@@ -42,9 +42,8 @@ Proje geliştirilirken aşağıdaki teknolojiler ve araçlar kullanılmıştır:
 - **Booking API**  
   Otel bilgilerini ve rezervasyon detaylarını almak için entegre edilmiştir.
 
----
-```bash
 ## Proje Yapısı
+```bash
 HotelsReservation.WebUI/
 ├── Controllers/
 │   └── DefaultController.cs        # Ana sayfa ve yönlendirme işlemlerini yönetir.
@@ -56,7 +55,7 @@ HotelsReservation.WebUI/
         ├── Index.cshtml            # Ana sayfa görüntüleme.
         └── HotelList.cshtml        # Otel listesi ve detayları gösterimi.
 
----
+```
 ## Ekran Görüntüleri
 
 ![4](https://github.com/user-attachments/assets/fec64383-9e64-4525-b1a0-92933c7ec7ea)
