@@ -6,11 +6,11 @@ namespace HotelsReservation.WebUI.Models
         public string message { get; set; }
         public long timestamp { get; set; }
 
-        public Data data { get; set; } // Changed from List<Hotel> to Data
+        public Data data { get; set; } 
 
         public class Data
         {
-            public List<Hotel> hotels { get; set; } // Contains the list of hotels
+            public List<Hotel> hotels { get; set; } 
         }
 
         public class Hotel
